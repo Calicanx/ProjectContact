@@ -55,7 +55,7 @@ export default function ContactCard({ contact }) {
   })
 
   return (
-    <div>
+    <div className='hq'>
       <h2 className='username'><span className='sp'>Username:</span> {username}</h2>
       <h2 className='company'><span className='sp'>Company:</span> {company.name}</h2>
       <button className='contactbtn' onClick={handleCompanyDetails}>Company details</button>
