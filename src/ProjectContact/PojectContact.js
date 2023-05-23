@@ -49,6 +49,9 @@ export default function ProjectContact2(){
       }
     return(
       <div className='row'>
+         <div className='col-12 center'>
+          <h1 className='lh'>LOGIN TO VIEW COMPANY DIRECTORY</h1>
+        </div>
           <div className='center col-12'>
               <form onSubmit={Login} className='form1'>
                   <p className='label'>Username:</p>
