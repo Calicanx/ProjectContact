@@ -1,6 +1,5 @@
 import React from 'react';
 import ContactCard from './ContactCard';
-import ProjectContact from './PojectContact';
 function ContactList({ contacts }) {
   return (
     <div>
