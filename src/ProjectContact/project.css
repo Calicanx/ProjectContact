@@ -269,7 +269,11 @@ input{
         min-width: 80%;
         width: 150%;
 	max-height: 250px;
+	margin-top: -20px;
     }
+    .fs{
+margin-top: 10px;
+	}
     .hq{
         margin-top: 25px;
     }
