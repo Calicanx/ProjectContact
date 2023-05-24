@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+.box{
+	box-sizing:border-box;
+}
+body{
+	margin:0px;
+	height:100%;
+    background-color: #ECF0F3;
+    color: #000000;
+}
+[class*="col-"]{
+	float:left;
+	padding:0px;
+}
+a:link{
+	text-decoration:black;
+}
+.col-1{
+	width:8.33%;
+}
+.col-2{
+	width:16.66%;
+}
+.col-3{
+	width:25%;
+}
+.col-4{
+	width:33.33%;
+}
+.col-5{
+	width:41.66%;
+}
+.col-6{
+	width:50%;
+}
+.col-7{
+	width:58.33%;
+}
+.col-8{
+	width:66.66%;
+}
+.col-9{
+	width:75%
+}
+.col-10{
+	width:83.33%
+}
+.col-11{
+	width:91.66%	
+}
+.col-12{
+	width:100%
+}
+.col-13{
+	width:14.2%;
+}
+.col-14{
+	width:20%;
+}
+.col-15{
+	width:15%;
+}
+.container{
+	position: relative;
+}
+.row::after{
+	content:"";
+	clear:both;
+	display:table;
+}
+
+.center{
+    text-align: center;
+}
+.form1{
+    position: relative;
+    top: 100px;
+}
+input{
+    height: 30px;
+    width: 200px;
+    border-radius: 50px;
+}
+.label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #000000;
+    border-radius: 15px;}
+.submit{
+    width: 201px;
+    height: 47px;
+    background: linear-gradient(180deg, #000000 0%, #2F2F2F 100%);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+    border-radius: 15px;
+    position: relative;
+    top: 25px;
+    cursor: pointer;
+}
+.username{
+    width: 15%;
+    height: 39px;
+    left: 59px;
+    top: 45px;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-left: 25px;
+}
+.company{
+    width: 30%;
+    height: 39px;
+    left: 59px;
+    top: 45px;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(24, 24, 24);
+
+    background: #ffffff9a;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.473);
+    border-radius: 5px;
+    margin-left: 25px;
+}
+.contactbtn{
+    
+    position: relative;
+    width: 150px;
+    height: 47px;
+    margin-left: 30px;
+
+    background: linear-gradient(180deg, #2F2F2F 0%, #6b6b6b 100%);
+    border-radius: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+/* identical to box height */
+
+    text-align: center;
+    cursor: pointer;
+
+    color: #FFFFFF;
+}
+.sp{
+    color: rgb(0, 0, 0);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+/* identical to box height */
+
+    text-align: center;
+}
+.companycontact{
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 30%;
+    height: 125px;
+    padding-left: 45px;
+    border-radius: 1%;
+}
+.companyname{
+    width: 25%;
+    height: 39px;
+    left: 59px;
+    top: 45px;
+    font-size: 24px;
+    font-weight: 500;
+
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.username1{
+    width: 25%;
+    height: 39px;
+    left: 59px;
+    top: 45px;
+    font-size: 24px;
+    font-weight: 500;
+
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.x{
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 10px;
+    left: 450px;
+    cursor: pointer;
+}
+.lh{
+    position: relative;
+    top: 100px;
+}
+.hq{
+    margin-top: 25px;
+    margin-left: 45px;
+}
+.profilep{
+    height: 95px;
+    width: 95px;
+    border-radius: 50px;
+    position: relative;
+    left: 25px;
+    cursor: pointer;
+}
+.h1{
+    font-size: 26px;
+}
+.boxshadow{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 37%;
+    height: 300px;
+    background-color: #00000000;
+    margin-top: 10px;
+}
+.hl{
+    margin-left: 45px;
+    width: 50%;
+}
+@media only screen and (max-width: 600px) {
+    .lh{
+        font-size: 4vw;
+        top: 25px;
+    }
+    .label{
+        font-size: 4vw;
+    }
+    input{
+        min-width: 275px;
+        min-height: 50px;
+    }
+    .submit{
+        min-height: 50px;
+        min-width: 100px;
+        font-size: 4vw;
+    }
+    .form1{
+        top: 25px;
+    }
+    .x{
+        left: 90%;
+    }
+    .boxshadow{
+        min-width: 80%;
+        width: 150%;
+    }
+    .hq{
+        margin-top: 25px;
+    }
+    .username{
+        width: 50%;
+        font-size: 4vw;
+    }
+    .company{
+        width: 100%;
+        font-size: 3vw;
+    }
+    .companyname{
+        font-size: 3vw;
+    }
+    .username1{
+        font-size: 3vw;
+    }
+    .h1{
+        font-size: 3vw;
+    }
+    .hl{
+        width: 75%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .lh{
+        font-size: 3.25vw;
+        top: 25px;
+    }
+    .label{
+        font-size: 2vw;
+    }
+    input{
+        min-width: 275px;
+        min-height: 50px;
+    }
+    .submit{
+        min-height: 50px;
+        min-width: 100px;
+        font-size: 2vw;
+    }
+    .form1{
+        top: 25px;
+    }
+    .x{
+        left: 90%;
+    }
+    .boxshadow{
+        min-width: 80%;
+        width: 100%;
+    }
+    .hq{
+        margin-top: 25px;
+    }
+    .username{
+        width: 50%;
+        font-size: 2vw;
+    }
+    .company{
+        width: 80%;
+        font-size: 2vw;
+    }
+    .companyname{
+        font-size: 2vw;
+    }
+    .username1{
+        font-size: 2vw;
+    }
+    .h1{
+        font-size: 2vw;
+    }
+}
