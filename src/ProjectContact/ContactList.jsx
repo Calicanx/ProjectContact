@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactCard from './ContactCard';
-import ContactH from './ContactH';
+
 export default function ContactList({ contacts }) {
   return (
     <>
