@@ -54,8 +54,8 @@ export default function ContactCard({ contact }) {
       <div className='col-12'>
         <div className='hq col-6'>
           <img src={profilepic} onClick={handleUserDetails} className='profilep'></img>
-          <UserDetails />
           <h2 className='username'>{username.toUpperCase()}</h2>
+          <UserDetails />
           <h2 className='company'><span className='sp'>Company:</span> {company.name}</h2>
           <button className='contactbtn' onClick={handleCompanyDetails}>Company details</button>
           <CompanyDetails />
