@@ -281,13 +281,13 @@ input{
         font-size: 3vw;
     }
     .companyname{
-        font-size: 3vw;
+        font-size: 3.75vw;
     }
     .username1{
-        font-size: 3vw;
+        font-size: 3.75vw;
     }	
     .sp{
-        font-size: 3vw;
+        font-size: 3.75vw;
     }
     .h1{
         font-size: 3vw;
@@ -295,6 +295,11 @@ input{
     .hl{
         width: 75%;
     }
+     .contactbtn{
+	 font-size: 3.5vw;
+	 max-width: 100%;
+	 max-height: 35px;
+     }
 }
 @media only screen and (min-width: 600px) {
     .lh{
@@ -346,4 +351,7 @@ input{
     .h1{
         font-size: 2vw;
     }
+     .contactbtn{
+         font-size: 2vw;
+	  min-width: 35%;
 }
