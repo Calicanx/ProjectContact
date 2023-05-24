@@ -52,7 +52,7 @@ export default function ContactCard({ contact }) {
   return (
     <div className='row'>
       <div className='col-12'>
-        <div className='hq col-6'>
+        <div className='hq col-5'>
           <img src={profilepic} onClick={handleUserDetails} className='profilep'></img>
           <h2 className='username'>{username.toUpperCase()}</h2>
           <UserDetails />
