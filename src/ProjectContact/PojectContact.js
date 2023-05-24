@@ -8,7 +8,7 @@ export default function ProjectContact(){
     const [password, setpassword] = useState(['']);
     const [error, setError] = useState(null);
     const [status, setstatus] = useState(['']);
-    const [contacts, setContacts] = useState([]);
+    const [contacts, setContacts] = useState(['']);
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
@@ -16,8 +16,7 @@ export default function ProjectContact(){
           .then(data => setContacts(data))
           .catch(error => console.error(error));
       }, []);
-
-
+      
     if (status === 'LoggedIn'){
         return(
             <>
@@ -27,15 +26,6 @@ export default function ProjectContact(){
             </>
         )
     }
-
-    function UsernameIput(e){
-        setid(e.target.value);
-    }
-
-    function PasswordInput(e){
-        setpassword(e.target.value)
-    }
-
     async function Login(e) {
         e.preventDefault();
         setstatus('submitting');
@@ -46,7 +36,8 @@ export default function ProjectContact(){
           setstatus('NotLogged');
           setError(err);
         }
-      }
+      };
+
     return(
       <div className='row'>
         <div className='col-12 center'>
@@ -55,10 +46,10 @@ export default function ProjectContact(){
           <div className='center col-12'>
               <form onSubmit={Login} className='form1'>
                   <p className='label'>Username:</p>
-                  <input type='text' value={id} onChange={UsernameIput} placeholder='Username'></input>
+                  <input type='text' value={id} onChange={e => setid(e.target.value)} placeholder='Username'></input>
                   <br/>
                   <p className='label'>Password:</p>
-                      <input type='password' value={password} onChange={PasswordInput} placeholder='Password'></input>
+                      <input type='password' value={password} onChange={e => setpassword(e.target.value)} placeholder='Password'></input>
                       <br/>
                       <button className='submit'>Log In</button>
                   </form>
@@ -66,7 +57,7 @@ export default function ProjectContact(){
           </div>
         </div>
     )
-}
+        }
 
 function submitForm(id, password) {
     return new Promise((resolve, reject) => {
