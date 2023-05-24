@@ -52,7 +52,7 @@ export default function ContactCard({ contact }) {
   return (
     <div className='row'>
       <div className='col-12'>
-        <div className='hq col-12'>
+        <div className='hq col-6'>
           <img src={profilepic} onClick={handleUserDetails} className='profilep'></img>
           <UserDetails />
           <h2 className='username'>{username.toUpperCase()}</h2>
@@ -61,7 +61,7 @@ export default function ContactCard({ contact }) {
           <CompanyDetails />
         </div>
         <div className='col-11 fs'></div>
-        <div className='hl'><hr/></div>
+        <div className='col-6 hl'><hr/></div>
       </div>
     </div>
 
