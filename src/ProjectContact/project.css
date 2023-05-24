@@ -285,6 +285,9 @@ input{
     }
     .username1{
         font-size: 3vw;
+    }	
+    .sp{
+        font-size: 3vw;
     }
     .h1{
         font-size: 3vw;
@@ -335,6 +338,9 @@ input{
         font-size: 2vw;
     }
     .username1{
+        font-size: 2vw;
+    }
+    .sp{
         font-size: 2vw;
     }
     .h1{
