@@ -38,7 +38,7 @@ export default function ContactCard({ contact }) {
   const CompanyDetails = useCallback(() => {
     if (showDetails) {
       return (
-          <div className='boxshadow'>
+          <div className='boxshadow fs'>
             <img src={button} className='x' onClick={() => setShowDetails(false)}></img>     
             <p><span className='companyname'>Company Name:</span> {company.name}</p>
             <p><span className='companyname'>Details:</span> {company.catchPhrase}</p>
@@ -60,7 +60,7 @@ export default function ContactCard({ contact }) {
           <button className='contactbtn' onClick={handleCompanyDetails}>Company details</button>
           <CompanyDetails />
         </div>
-        <div className='col-11 fs'></div>
+        <div className='col-11'></div>
         <div className='col-6 hl'><hr/></div>
       </div>
     </div>
