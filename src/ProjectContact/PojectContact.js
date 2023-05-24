@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ContactList from './ContactList';
+import ContactH from './ContactH';
 import './project.css'
 
 
@@ -7,7 +8,7 @@ export default function ProjectContact(){
     const [id, setid] = useState(['']);
     const [password, setpassword] = useState(['']);
     const [error, setError] = useState(null);
-    const [status, setstatus] = useState(['']);
+    const [status, setstatus] = useState(false);
     const [contacts, setContacts] = useState(['']);
 
     useEffect(() => {
@@ -17,23 +18,22 @@ export default function ProjectContact(){
           .catch(error => console.error(error));
       }, []);
       
-    if (status === 'LoggedIn'){
+    if (status === true){
         return(
             <>
-            <div>
+                <ContactH/>
                 <ContactList contacts={contacts} />
-            </div>
             </>
         )
     }
     async function Login(e) {
         e.preventDefault();
-        setstatus('submitting');
+        setstatus(false);
         try {
           await submitForm(id, password);
-          setstatus('LoggedIn');
+          setstatus(true);
         } catch (err) {
-          setstatus('NotLogged');
+          setstatus(false);
           setError(err);
         }
       };
