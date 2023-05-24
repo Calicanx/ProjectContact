@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import ContactList from './ContactList';
-import ContactH from './ContactH';
 import './project.css'
 
 
@@ -21,7 +20,6 @@ export default function ProjectContact(){
     if (status === true){
         return(
             <>
-                <ContactH/>
                 <ContactList contacts={contacts} />
             </>
         )
