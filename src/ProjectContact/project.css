@@ -245,3 +245,8 @@ input{
     margin-left: 45px;
     width: 50%;
 }
+@media only screen and (max-width: 600px) {
+	.lh{
+	border:solid 2px red;
+	}
+}
